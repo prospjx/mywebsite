@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prosper Olusegun-Joseph | Software & Cloud/DevOps Engineer</title>
+  <meta name="description" content="Portfolio of Prosper Olusegun-Joseph - Software Engineer, Cloud and DevOps Engineer specializing in Microservices, Kubernetes, FastAPI, Terraform, and AI Systems.">
+  <meta name="keywords" content="Prosper Olusegun-Joseph, Software Engineer, Cloud Engineer, DevOps, FastAPI, Python, Kubernetes, Docker, ArgoCD, Terraform, Georgia State University">
+  <meta property="og:title" content="Prosper Olusegun-Joseph | Software & Cloud/DevOps Engineer">
+  <meta property="og:description" content="Explore production microservices, GitOps pipelines, AI assistants, and distributed systems.">
+  <meta property="og:type" content="website">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Modern Clean Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- AMBIENT LIGHTING & GRID -->
+  <div class="ambient-glow"></div>
+  <div class="ambient-grid"></div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar">
+    <div class="nav-content">
+      <a href="#hero" class="nav-brand" aria-label="Home">
+        <span class="brand-badge">POJ</span>
+        <span>Prosper O-J</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#terminalSection" class="nav-link">Terminal</a></li>
+        <li><a href="#dashboard" class="nav-link">Projects</a></li>
+        <li><a href="#architecture" class="nav-link">Architecture</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn-icon" title="Toggle Theme" aria-label="Toggle Theme">
+          <i class="fas fa-sun"></i>
+        </button>
+        <a href="https://github.com/prospjx" target="_blank" rel="noopener noreferrer" class="btn-icon" title="GitHub Profile" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/polusegun-joseph/" target="_blank" rel="noopener noreferrer" class="btn-icon" title="LinkedIn Profile" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#contact" class="btn-primary">
+          <i class="fas fa-paper-plane"></i>
+          <span>Let's Talk</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+      <div class="hero-avatar-wrapper">
+        <div class="hero-avatar-frame">
+          <img src="headshot.jpg" alt="Prosper Olusegun-Joseph - Software & Cloud/DevOps Engineer" class="hero-avatar-img">
+        </div>
+      </div>
+
+      <div class="status-pill">
+        <span class="pulse-dot"></span>
+        <span>Available for SWE & Cloud/DevOps Engineering Roles</span>
+      </div>
+
+      <h1 class="hero-title">Prosper Olusegun-Joseph</h1>
+      <h2 class="hero-subtitle">Software Engineer / Cloud & DevOps Engineer</h2>
+      
+      <p class="hero-bio">
+        Student at <strong>Georgia State University</strong> engineering robust microservice ecosystems,
+        cloud-native infrastructure with <strong>Kubernetes & GitOps</strong>, automated CI/CD delivery pipelines,
+        and intelligent AI-driven applications with Google Gemini.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#dashboard" class="btn-primary">
+          <i class="fas fa-cubes"></i> Explore Systems & Code
+        </a>
+        <a href="resume.pdf" download="Prosper_Olusegun_Joseph_Resume.pdf" class="btn-secondary" title="Download Prosper's Resume">
+          <i class="fas fa-arrow-down-to-bracket"></i> Download Resume
+        </a>
+        <a href="#terminalSection" class="btn-secondary">
+          <i class="fas fa-terminal"></i> Launch Dev Terminal
+        </a>
+        <button id="copyEmailBtn" class="btn-secondary">
+          <i class="far fa-copy"></i> Copy Email
+        </button>
+      </div>
+
+      <!-- LIVE GITHUB REPOSITORY & SYSTEM METRICS (PROMINENT BANNER) -->
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-icon-box">
+            <i class="fab fa-github fa-lg"></i>
+          </div>
+          <div>
+            <div id="ghReposCount" class="metric-val">25</div>
+            <div class="metric-label">Public Repositories</div>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon-box">
+            <i class="fas fa-star" style="color: #f59e0b;"></i>
+          </div>
+          <div>
+            <div id="ghStarsCount" class="metric-val">0</div>
+            <div class="metric-label">GitHub Stars Earned</div>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon-box">
+            <i class="fas fa-server"></i>
+          </div>
+          <div>
+            <div class="metric-val">4+</div>
+            <div class="metric-label">Production Microservices</div>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon-box">
+            <i class="fas fa-code-commit"></i>
+          </div>
+          <div>
+            <div id="ghRecentPush" class="metric-val">Active</div>
+            <div class="metric-label">Recent Git Commits & Deploys</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- INTERACTIVE TERMINAL COMPONENT -->
+      <div id="terminalSection" class="terminal-wrapper">
+        <div class="terminal-header">
+          <div class="terminal-controls">
+            <span class="t-btn close"></span>
+            <span class="t-btn minimize"></span>
+            <span class="t-btn maximize"></span>
+          </div>
+          <div class="terminal-title">
+            <i class="fas fa-terminal"></i>
+            <span>prosper@cloud-node: ~/portfolio</span>
+            <span class="terminal-badge">zsh (interactive)</span>
+          </div>
+          <div style="font-size: 0.72rem; color: #64748b;">
+            Type <code>help</code>
+          </div>
+        </div>
+
+        <div id="terminalBody" class="terminal-body">
+          <div class="terminal-welcome">
+            Welcome to Prosper's interactive engineering console! Try commands like 
+            <span class="cmd-badge">help</span>, <span class="cmd-badge">whoami</span>, 
+            <span class="cmd-badge">projects</span>, <span class="cmd-badge">devops</span>, or 
+            <span class="cmd-badge">arch</span>.
+          </div>
+
+          <div id="terminalCommandAnchor"></div>
+
+          <div class="terminal-prompt-line">
+            <span class="prompt-symbol">➜</span>
+            <span class="prompt-path">~/portfolio</span>
+            <input type="text" id="terminalInput" class="terminal-input" placeholder="Type a command (e.g. 'help', 'projects', 'devops') and press Enter..." autocomplete="off" spellcheck="false">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DASHBOARD MULTI-SECTION -->
+    <section id="dashboard" class="dashboard-section">
+      <div class="section-header">
+        <span class="section-tag">Engineering Showcase</span>
+        <h2 class="section-title">Systems, Cloud & Full-Stack Projects</h2>
+        <p class="section-desc">
+          Browse specialized engineering disciplines below or inspect live system architecture flows.
+        </p>
+      </div>
+
+      <!-- TAB NAVIGATION -->
+      <div class="tabs-container">
+        <button class="tab-btn active" data-tab="tab-devops">
+          <i class="fas fa-cloud"></i> Cloud & DevOps
+        </button>
+        <button class="tab-btn" data-tab="tab-backend">
+          <i class="fas fa-network-wired"></i> Microservices Ecosystem
+        </button>
+        <button class="tab-btn" data-tab="tab-ai">
+          <i class="fas fa-microchip"></i> AI & Full-Stack
+        </button>
+        <button class="tab-btn" data-tab="tab-arch">
+          <i class="fas fa-project-diagram"></i> Architecture Explorer
+        </button>
+        <button class="tab-btn" data-tab="tab-skills">
+          <i class="fas fa-layer-group"></i> Skills Matrix
+        </button>
+      </div>
+
+      <!-- TAB 1: CLOUD & DEVOPS -->
+      <div id="tab-devops" class="tab-panel active">
+        <div id="devopsProjectsGrid" class="projects-grid"></div>
+      </div>
+
+      <!-- TAB 2: BACKEND & MICROSERVICES -->
+      <div id="tab-backend" class="tab-panel">
+        <div id="backendProjectsGrid" class="projects-grid"></div>
+      </div>
+
+      <!-- TAB 3: AI & MOBILE / FULL-STACK -->
+      <div id="tab-ai" class="tab-panel">
+        <div id="aiProjectsGrid" class="projects-grid"></div>
+      </div>
+
+      <!-- TAB 4: SYSTEM ARCHITECTURE EXPLORER -->
+      <div id="tab-arch" class="tab-panel">
+        <div class="arch-visualizer-card">
+          <div class="arch-header">
+            <div>
+              <h3 style="font-size: 1.45rem; margin-bottom: 0.35rem;">Smart Course Scheduler Architecture Topology</h3>
+              <p style="color: var(--text-secondary); font-size: 0.92rem;">Click on any component node below to inspect its data flow, protocols, and orchestration behavior.</p>
+            </div>
+            <a href="https://github.com/prospjx/scheduler-api" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="font-size: 0.82rem;">
+              <i class="fab fa-github"></i> View Scheduler Gateway
+            </a>
+          </div>
+
+          <div class="arch-canvas">
+            <!-- TIER 1: GATEWAY & DISPATCH -->
+            <div class="arch-tier">
+              <div class="tier-label">
+                <i class="fas fa-shield-alt"></i> Entry Layer & Gateway
+              </div>
+              <div class="nodes-row">
+                <div class="arch-node active-node" data-node-key="gateway">
+                  <div class="node-icon-title">
+                    <span class="node-icon" style="color: #38bdf8;"><i class="fas fa-compress-arrows-alt"></i></span>
+                    <span class="node-name">scheduler-api</span>
+                  </div>
+                  <div class="node-role">Gateway, Orchestrator & CSP Engine</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TIER 2: SPECIALIZED MICROSERVICES -->
+            <div class="arch-tier">
+              <div class="tier-label">
+                <i class="fas fa-cubes"></i> Core Domain Microservices
+              </div>
+              <div class="nodes-row">
+                <div class="arch-node" data-node-key="course">
+                  <div class="node-icon-title">
+                    <span class="node-icon" style="color: #60a5fa;"><i class="fas fa-book-open"></i></span>
+                    <span class="node-name">course-api</span>
+                  </div>
+                  <div class="node-role">Catalog, Prerequisites & Sections</div>
+                </div>
+
+                <div class="arch-node" data-node-key="student">
+                  <div class="node-icon-title">
+                    <span class="node-icon" style="color: #10b981;"><i class="fas fa-user-graduate"></i></span>
+                    <span class="node-name">student-api</span>
+                  </div>
+                  <div class="node-role">Profiles, Hours & Routine Preferences</div>
+                </div>
+
+                <div class="arch-node" data-node-key="ai">
+                  <div class="node-icon-title">
+                    <span class="node-icon" style="color: #f59e0b;"><i class="fas fa-brain"></i></span>
+                    <span class="node-name">ai-assistant-api</span>
+                  </div>
+                  <div class="node-role">Google Gemini Multimodal AI Vision</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TIER 3: DATA & INFRASTRUCTURE -->
+            <div class="arch-tier">
+              <div class="tier-label">
+                <i class="fas fa-database"></i> Persistence & Continuous Delivery
+              </div>
+              <div class="nodes-row">
+                <div class="arch-node" data-node-key="db">
+                  <div class="node-icon-title">
+                    <span class="node-icon" style="color: #818cf8;"><i class="fas fa-database"></i></span>
+                    <span class="node-name">PostgreSQL Cluster</span>
+                  </div>
+                  <div class="node-role">Relational Store + Alembic Migrations</div>
+                </div>
+
+                <div class="arch-node" data-node-key="gitops">
+                  <div class="node-icon-title">
+                    <span class="node-icon" style="color: #f43f5e;"><i class="fas fa-infinity"></i></span>
+                    <span class="node-name">GitOps (ArgoCD + EKS)</span>
+                  </div>
+                  <div class="node-role">AWS EKS Auto-Reconciled Delivery</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- NODE DETAIL INSPECTOR PANEL -->
+          <div class="arch-info-panel">
+            <div>
+              <span style="color: #94a3b8; text-transform: uppercase; font-size: 0.72rem; letter-spacing: 0.05em; display: block; margin-bottom: 0.25rem;">Inspected Node:</span>
+              <span id="archNodeTitle" class="active-label">scheduler-api (Gateway & Engine) [Central Orchestrator]</span>
+              <p id="archNodeDesc" style="margin-top: 0.45rem; line-height: 1.5; color: #cbd5e1; max-width: 800px;">
+                Receives incoming timetable requests, calls Course and Student APIs, executes constraint satisfaction solver, queries Gemini for intelligent routing, and returns conflict-free schedules.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 5: SKILLS MATRIX -->
+      <div id="tab-skills" class="tab-panel">
+        <div class="skills-category-grid">
+          <div class="skill-category-card">
+            <h3 class="category-title"><i class="fas fa-code" style="color: var(--accent-blue-light);"></i> Core Languages</h3>
+            <div class="skills-list">
+              <span class="skill-pill"><i class="fab fa-python" style="color:#3776ab;"></i> Python</span>
+              <span class="skill-pill"><i class="fas fa-microchip" style="color:#00599c;"></i> C++</span>
+              <span class="skill-pill"><i class="fas fa-feather-alt" style="color:#0175c2;"></i> Dart</span>
+              <span class="skill-pill"><i class="fab fa-js" style="color:#f7df1e;"></i> JavaScript (ES6+)</span>
+              <span class="skill-pill"><i class="fas fa-code-branch" style="color:#3178c6;"></i> TypeScript</span>
+              <span class="skill-pill"><i class="fas fa-database" style="color:#4169e1;"></i> SQL</span>
+              <span class="skill-pill"><i class="fas fa-cubes" style="color:#844fba;"></i> HCL / Terraform</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card">
+            <h3 class="category-title"><i class="fas fa-cloud" style="color: var(--accent-cyan);"></i> Cloud & DevOps</h3>
+            <div class="skills-list">
+              <span class="skill-pill"><i class="fab fa-docker" style="color:#2496ed;"></i> Docker</span>
+              <span class="skill-pill"><i class="fas fa-dharmachakra" style="color:#326ce5;"></i> Kubernetes</span>
+              <span class="skill-pill"><i class="fas fa-infinity" style="color:#f43f5e;"></i> ArgoCD GitOps</span>
+              <span class="skill-pill"><i class="fab fa-aws" style="color:#ff9900;"></i> AWS EKS / VPC / RDS</span>
+              <span class="skill-pill"><i class="fas fa-layer-group" style="color:#844fba;"></i> Terraform IaC</span>
+              <span class="skill-pill"><i class="fas fa-anchor" style="color:#0f1689;"></i> Helm Charts</span>
+              <span class="skill-pill"><i class="fab fa-github" style="color:#2088ff;"></i> GitHub Actions CI/CD</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card">
+            <h3 class="category-title"><i class="fas fa-server" style="color: var(--accent-emerald);"></i> Backend & Frameworks</h3>
+            <div class="skills-list">
+              <span class="skill-pill"><i class="fas fa-bolt" style="color:#009688;"></i> FastAPI</span>
+              <span class="skill-pill"><i class="fas fa-cube" style="color:#e0234e;"></i> Pydantic v2</span>
+              <span class="skill-pill"><i class="fas fa-link" style="color:#d71f00;"></i> SQLAlchemy</span>
+              <span class="skill-pill"><i class="fas fa-code-branch" style="color:#10b981;"></i> Alembic Migrations</span>
+              <span class="skill-pill"><i class="fab fa-flutter" style="color:#02569b;"></i> Flutter</span>
+              <span class="skill-pill"><i class="fas fa-robot" style="color:#6366f1;"></i> Google Gemini AI</span>
+              <span class="skill-pill"><i class="fas fa-volume-up" style="color:#f59e0b;"></i> ElevenLabs Audio API</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card">
+            <h3 class="category-title"><i class="fas fa-chart-line" style="color: var(--accent-amber);"></i> Observability & Databases</h3>
+            <div class="skills-list">
+              <span class="skill-pill"><i class="fas fa-fire" style="color:#e6522c;"></i> Prometheus</span>
+              <span class="skill-pill"><i class="fas fa-chart-bar" style="color:#f46800;"></i> Grafana</span>
+              <span class="skill-pill"><i class="fas fa-database" style="color:#4169e1;"></i> PostgreSQL</span>
+              <span class="skill-pill"><i class="fas fa-leaf" style="color:#47a248;"></i> MongoDB</span>
+              <span class="skill-pill"><i class="fas fa-bolt" style="color:#3ecf8e;"></i> Supabase</span>
+              <span class="skill-pill"><i class="fas fa-memory" style="color:#dc382d;"></i> Redis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <section id="education" class="timeline-section">
+      <div class="section-header">
+        <span class="section-tag">Academic & Credentials</span>
+        <h2 class="section-title">Education & Milestones</h2>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">Undergraduate Degree</div>
+            <h3 class="timeline-role">Computer Science / Software Engineering</h3>
+            <div class="timeline-inst">Georgia State University (GSU)</div>
+            <p class="timeline-body">
+              Focusing on algorithms, data structures, computer systems, database design, software engineering methodologies, and distributed systems. Scholar recognized across student achievement initiatives.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">Specialized Credential</div>
+            <h3 class="timeline-role">Continuous Integration and Continuous Delivery (CI/CD)</h3>
+            <div class="timeline-inst">IBM Developer Specialization</div>
+            <p class="timeline-body">
+              Demonstrated mastery in automated build pipelines, test suites, containerization paradigms, deployment strategies, and continuous integration governance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+      <div class="contact-card">
+        <h2 class="contact-title">Let's Build Something Exceptional</h2>
+        <p class="contact-desc">
+          I am actively seeking software engineering, cloud, and DevOps opportunities.
+          Whether you have an inquiry, open role, or collaboration idea, my inbox is always open.
+        </p>
+
+        <div class="contact-methods">
+          <a href="mailto:prospergodsson@gmail.com" class="email-box" title="Send Email">
+            <i class="fas fa-envelope" style="color: var(--accent-blue-light);"></i>
+            <span>prospergodsson@gmail.com</span>
+          </a>
+        </div>
+
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="mailto:prospergodsson@gmail.com" class="btn-primary">
+            <i class="fas fa-paper-plane"></i> Email Prosper
+          </a>
+          <a href="resume.pdf" download="Prosper_Olusegun_Joseph_Resume.pdf" class="btn-secondary" title="Download Prosper's Resume">
+            <i class="fas fa-arrow-down-to-bracket"></i> Download Resume (PDF)
+          </a>
+          <a href="https://www.linkedin.com/in/polusegun-joseph/" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            <i class="fab fa-linkedin"></i> Connect on LinkedIn
+          </a>
+          <a href="https://github.com/prospjx" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            <i class="fab fa-github"></i> Inspect GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <span>Designed & Engineered by <strong>Prosper Olusegun-Joseph</strong></span>
+        <span style="margin: 0 0.5rem;">•</span>
+        <span id="liveSystemTime">2026</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/prospjx" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/polusegun-joseph/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+        <a href="mailto:prospergodsson@gmail.com" class="footer-link">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROJECT MODAL OVERLAY -->
+  <div id="projectModalOverlay" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content">
+      <button id="modalCloseBtn" class="modal-close-btn" aria-label="Close Modal">
+        <i class="fas fa-times"></i>
+      </button>
+      <div id="modalContentBody"></div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toastNotice" class="toast-notice"></div>
+
+  <!-- MAIN SCRIPT -->
+  <script src="app.js"></script>
+</body>
+</html>
