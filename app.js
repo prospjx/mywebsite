@@ -734,11 +734,6 @@ async function fetchGitHubStats() {
         }
       });
 
-      const starsCountElem = document.getElementById("ghStarsCount");
-      if (starsCountElem) {
-        starsCountElem.textContent = totalStars;
-      }
-
       const recentPushElem = document.getElementById("ghRecentPush");
       if (recentPushElem && latestPushDate) {
         const diffDays = Math.floor((new Date() - latestPushDate) / (1000 * 60 * 60 * 24));
@@ -753,8 +748,6 @@ async function fetchGitHubStats() {
     }
   } catch (err) {
     console.warn("GitHub API rate limit or network offline, keeping fallback numbers:", err);
-    const starsCountElem = document.getElementById("ghStarsCount");
-    if (starsCountElem) starsCountElem.textContent = "0";
   }
 }
 
