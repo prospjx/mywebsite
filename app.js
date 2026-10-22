@@ -240,7 +240,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // THEME TOGGLE
 function initTheme() {
   const themeToggle = document.getElementById("themeToggle");
-  const savedTheme = localStorage.getItem("poj_theme") || "dark";
+  const savedTheme = localStorage.getItem("poj_theme") || "light";
   document.documentElement.setAttribute("data-theme", savedTheme);
   updateThemeIcon(savedTheme);
 
